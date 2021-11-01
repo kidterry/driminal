@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title><hr/>
+    
+<style type="text/css">
+            .body{
+            padding: 0;
+            margin: 0;
+
+            background-color:gold;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 25px;
+        }
+        #hr{
+            width: 80%;
+        }
+        #h2{
+            font-size: 20px;
+        }
+        .contact-items{
+            display: flex;
+            margin: 30px auto;
+            flex-wrap: wrap;
+            align-items: center;
+
+        }
+        .customer-care,.write-us,.sales-market{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 28%;
+            margin: 30px auto;
+            padding: 35px 15px;
+            border-radius: 15px;
+            text-align: center;
+            min-width: 250px;
+            
+        }
+        .customer-care{
+            height: 250px;
+            box-shadow: 0 15px 15px green;
+            border: 1px solid green;
+        }
+        .write-us{
+            height: 250px;
+            box-shadow: 0 15px 15px red;
+            border: 1px solid red;
+        }
+        .sales-market{
+            height: 250px;
+            box-shadow: 0 15px 15px blue;
+            border: 1px solid blue;
+        }
+        .p{
+            font-size: 15px;
+        }
+        .button{
+            padding: 8px 16px;
+            font-size: 17px;
+            border-radius: 25px;
+            border: none;
+            margin: 15px auto;
+            cursor: pointer;
+            color: rgb(255, 255, 255);
+        }
+        .button:hover{
+            color: gray;
+        }
+        #cust-care{
+            background: green;
+
+            box-shadow: 0 0 5px black;
+        }
+        #write{
+            background: rgb(187, 15, 15);
+
+            box-shadow: 0 0 5px black;
+        }
+        #sales{
+            background: blue;
+            box-shadow: 0 0 5px black;
+        }
+        a{
+            font-size: 16px;
+        }
+        .customer-care a{
+            color: green;
+            text-shadow: 0 0 2px rgba(73, 129, 80, 0.637);
+        }
+        .sales-market a{
+            color: blue;
+            text-shadow: 0 0 2px rgba(76, 62, 158, 0.637);
+        }
+    
+</style>
+</head>
+<body style="background-color: lightblue;">
+    <div class="container">
+        <h1> Flyterry Airline Contact Support</h1>
+        <hr>
+        <h2>Have any questions? We'd love to hear from you</h2>
+
+        <div class="contact-items">
+            <div class="customer-care">
+                <h3>Customer Care</h3>
+                <p>Our Support team is there 24/7 to give you fast response</p>
+                <label>dialnow</label>
+                <button id="cust-care"><a href="tel:+263776516510">dialnow</a></button>
+            </div>
+            <div class="write-us">
+                <h3>Email us@</h3>
+                <p> You can write us if you have any queries</p>
+                <button id="write"><a href="mailto:terrymurindi81@gmail.com"> emailnow</a></button>
+            </div>
+            <div class="sales-market">
+                <h3> Sales and Marketing</h3>
+                <p>Get in touch with our sales and marketing team</p>
+                <label id="sales">Contact Sales<br>@facebook/FLYTERRYair<br>@instagram/FLYTERRYair<BR>@twitter/FLYTERRYair<br>@ourweb#www.FLYTERRYairlines.com</label>
+                
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

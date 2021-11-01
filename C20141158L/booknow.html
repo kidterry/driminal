@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+<head>
+<title>Booknow</title>
+<style type="text/css">
+body{background-color: transparent;}
+.box{box-shadow:0 0 5px lime;height: 600px;width: 600px;padding: 4px;margin: auto;margin-top: 4em;border:3px thin black;background-color:whitesmoke;}
+</style>
+</head>
+
+<body style="background-color: mediumpurple;">
+
+<div class="enclosed">
+	<marquee direction="left"><p style="color: red;">NOTE THAT:FLIGHT TIMES WILL BE[MORNING:10:11AM;AFTERNOONS:14:30PM] ANY ALTERATIONS/DELAYS WILL BE QUICKLY NOTIFIED</marquee>
+
+	<div class="box"><p style="text-shadow:0 0 3px orange;color:maroon;font-size: x-large;margin-top: 0em;text-decoration: underline;">FLYTERRY AIRLINE BookForm</p>
+	<form  name="myForm"/action="booknow.php"onsubmit ="return validateform()"method="post">
+      name:<input type="text"name="firstname"placeholder="name required" required=""><br><br><br>
+	  surname:<input type="text"name="surname"placeholder="surname required"required>
+	  <br><br><br>
+	  id:<input type="text"name="id"placeholder="id required"required><br><br><br>
+	  phone number:<input type="text"name="phonenumber"placeholder="phonenumber required"required><br><br><br>
+	  flyfrom?:<select name="flyfrom"required>
+	  	<option value="KARIBA">KARIBA</option>
+	  	<option value="HARARE">HARARE</option>
+	  	<option value="BULAWAYO">BULAWAYO</option>
+	  	<option value="VICFALLS">VICFALLS</option>
+	  </select><br><br><br>
+
+     flyto?:<select name="flyto"required>
+	  	<option value="KARIBA">KARIBA</option>
+	  	<option value="HARARE">HARARE</option>
+	  	<option value="BULAWAYO">BULAWAYO</option>
+	  	<option value="VICFALLS">VICFALLS</option>
+	  </select><br><br><br>
+
+	  dayforflight?:<select name="flyday"required>
+	  	<option value="MONDAY">MONDAY</option>
+	  	<option value="WEDNESDAY">WEDNESDAY</option>
+	  	<option value="FRIDAY">FRIDAY</option>
+	  	<option value="SATURDAY">SATURDAY</option>
+	  </select><br><br><br>
+	  flightsession?:<select name="flightsession"required>
+	  	<option value="morning">MORNING</option>
+	  	<option value="afternoon">AFTERNOON</option>
+</select><br><br><br>
+	  	dateofbooking:<input type="date" name="bookingdate"required><br><br><br>
+
+	  	<input type="submit" name="submit"value="submit"><br>
+	  	<button name="cancel"><a href="booknow.html">cancel</a></button>
+
+</form>
+	
+	</div>
+<a href="flyterry.html"><p style="color:red">Home</p></a>
+
+</div>
+
+<script type="text/javascript">
+	function validateform() {
+let firstname=document.forms["myform"]["firstname"]     ;
+let surname=document.forms["myform"]["surname"];
+let id=document.forms["myform"]["id"];
+let phonenumber=document.forms["myform"]["phonenumber"];
+let flyfrom=document.forms["myform"]["flyfrom"];
+let flyto=document.forms["myform"]["flyto"];
+let flyday=document.forms["myform"]["flyday"];
+let flightsession=document.forms["myform"]["flightsession"];
+let bookingdate=document.forms["myform"]["bookingdate"];
+
+if (firstname.value=="") {
+	window.alert("enter name please?");
+	firstname.focus();
+	return false;
+}
+if (surname.value=="") {
+	window.alert("enter surname please?");
+	surname.focus();
+	return false;
+}
+if (id.value=="") {
+	window.alert("enter id please?");
+	id.focus();
+	return false;
+}
+if (phonenumber.value=="") {
+	window.alert("enter phonenumber please?");
+	phonenumber.focus();
+	return false;
+}
+if (flyfrom.value=="") {
+	window.alert("select departure place please?");
+	flyfrom.focus();
+	return false;
+}
+if (flyto.value=="") {
+	window.alert("select destination please?");
+	flyto.focus();
+	return false;
+}
+if (flyday.value=="") {
+	window.alert("select departure day please?");
+	flyday.focus();
+	return false;
+}
+if (flysession.value=="") {
+	window.alert("select preffered session please?");
+	flysession.focus();
+	return false;
+}
+if (bookingdate.value=="") {
+	window.alert("enter booking day please?");
+	bookingdate.focus();
+	return false;
+}
+
+}
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
